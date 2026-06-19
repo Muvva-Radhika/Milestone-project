@@ -1,0 +1,111 @@
+==================================================
+Student Participation Eligibility Prediction System
+==================================================
+Execution Started: 2026-06-19 18:15:14.732105
+
+
+==================================================
+Feature Engineering
+==================================================
+Loading Attendance Dataset...
+Dataset Loaded Successfully!
+Total Records: 39200
+
+Creating Student Summary...
+Calculating Consistency Score...
+Calculating Domain Participation...
+Calculating Engagement Score...
+
+Feature Engineering Completed Successfully!
+
+Total Students: 980
+
+Generated Features:
+
+1. Total_Sessions
+2. Sessions_Attended
+3. Average_Attendance_Minutes
+4. Attendance_Percentage
+5. Attendance_Std
+6. Consistency_Score
+7. Domain_Participation_Count
+8. Engagement_Score
+9. Eligible
+
+
+Saved To:
+C:\Users\radhi\Downloads\Student_Participation_Eligibility_System(milestone project)\Student_Participation_Eligibility_System\data\processed\Student_Attendance_Summary.csv
+
+Sample Data:
+  Student_ID   Student_Name  ... Engagement_Score  Eligible
+0     ST0001      Sai Reddy  ...            76.83         1
+1     ST0002    Rohit Gupta  ...            65.25         0
+2     ST0003   Harsha Kumar  ...            62.50         0
+3     ST0004  Praveen Gupta  ...            70.05         1
+4     ST0005    Varun Patel  ...            61.10         0
+
+[5 rows x 12 columns]
+
+==================================================
+Model Training
+==================================================
+All Models Saved Successfully
+
+==================================================
+Model Evaluation
+==================================================
+
+Best Model:
+Model        Logistic Regression
+Accuracy                     1.0
+Precision                    1.0
+Recall                       1.0
+F1 Score                     1.0
+Name: 0, dtype: object
+
+Classification Report:
+              precision    recall  f1-score   support
+
+           0       1.00      1.00      1.00        78
+           1       1.00      1.00      1.00       118
+
+    accuracy                           1.00       196
+   macro avg       1.00      1.00      1.00       196
+weighted avg       1.00      1.00      1.00       196
+
+Best Model Summary Saved
+Classification Report Saved
+                 Model  Accuracy  Precision  Recall  F1 Score
+0  Logistic Regression       1.0        1.0     1.0       1.0
+1        Decision Tree       1.0        1.0     1.0       1.0
+2        Random Forest       1.0        1.0     1.0       1.0
+
+Evaluation Completed
+
+==================================================
+Eligibility Generation
+==================================================
+Loading Student Attendance Dataset...
+Dataset Loaded Successfully!
+Total Students : 980
+
+Loading Random Forest Model...
+Random Forest Model Loaded Successfully!
+
+Predicting Eligibility...
+Prediction Completed!
+
+========== FINAL REPORT ==========
+   Total_Students  Eligible_Students  Ineligible_Students  Eligibility_Rate (%)
+0             980                590                  390                  60.2
+
+Files Generated Successfully:
+
+C:\Users\radhi\Downloads\Student_Participation_Eligibility_System(milestone project)\Student_Participation_Eligibility_System\outputs\eligible_students.csv
+C:\Users\radhi\Downloads\Student_Participation_Eligibility_System(milestone project)\Student_Participation_Eligibility_System\outputs\ineligible_students.csv
+C:\Users\radhi\Downloads\Student_Participation_Eligibility_System(milestone project)\Student_Participation_Eligibility_System\outputs\final_eligibility_report.csv
+
+ML-Based Eligibility Process Completed!
+
+Execution Completed: 2026-06-19 18:15:39.695872
+Total Duration: 0:00:24.963767
