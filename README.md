@@ -166,14 +166,3 @@ The system automatically:
 * Cloud Deployment
 * Student Performance Analytics
 
----
-
-## Authors
-
-Neeluri Chaithanya
-
-Pundla Venkatalakshmi Satya Sri
-
-Neelisetty Hema Siri
-
-Suragani Dhanumjay
